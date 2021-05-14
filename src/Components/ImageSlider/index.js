@@ -21,7 +21,8 @@ export default function ImageSlider({slides}){
     }
 
     return(
-        <section className={styles.slider}>
+        <div className={styles.slider}>
+            <center><h3>Click on each project to view it in your browser</h3></center>
             <FaArrowAltCircleLeft className={styles.leftarrow} onClick={prevSlide} />
 
             <FaArrowAltCircleRight className={styles.rightarrow} onClick={nextSlide}/>
@@ -36,6 +37,6 @@ export default function ImageSlider({slides}){
                 )
             })}
 
-        </section>
+        </div>
     )
 }
