@@ -22,7 +22,7 @@ export default function ImageSlider({slides}){
 
     return(
         <div className={styles.slider}>
-            <center><h3>Click on each project to view it in your browser</h3></center>
+            <center><h3 className={styles.headertext}>Click on each project to view it in your browser</h3></center>
             <FaArrowAltCircleLeft className={styles.leftarrow} onClick={prevSlide} />
 
             <FaArrowAltCircleRight className={styles.rightarrow} onClick={nextSlide}/>
@@ -36,7 +36,7 @@ export default function ImageSlider({slides}){
                     </div>
                 )
             })}
-
+            <p className={styles.description}>{SliderData[current].description}</p>
         </div>
     )
 }

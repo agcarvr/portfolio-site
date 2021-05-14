@@ -1,21 +1,22 @@
 .homebody{
     font-family: 'Rajdhani';
-    height: calc(100vh - 50px);
+    height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     color: rgb(224, 241, 247);
 }
 
+
+.textbody{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .reacticon{
-    padding: 2px;
-    color: white;
-}
-
-.reactstring{
-    display: inline;
-}
-
-.mernstring{
-    display: inline;
+    position: relative;
 }

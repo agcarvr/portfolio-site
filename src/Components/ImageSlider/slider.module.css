@@ -1,6 +1,6 @@
 .slider{
     position: relative;
-    height: 100vh;
+    height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,9 +8,15 @@
 }
 
 .image{
-    width: 1000px;
-    height: 600px;
+    width: 100vw;
+    height: 70vh;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 700px){
+    .image{
+        height: 40vh;
+    }
 }
 
 .rightarrow{
@@ -43,4 +49,37 @@
 .slideActive{
     opacity: 1;
     transition-duration: .8s;
+}
+
+.headertext{
+    color: rgb(224, 241, 247);
+}
+
+.description{
+    background-color: whitesmoke;
+    color: Black;
+    text-align: center;
+    padding: 40px;
+    margin: 0;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+@media screen and (min-width: 1000px){
+    .description{
+        width: 76vw;
+    }
+    .image{
+        width: 80vw;
+    }
+    .rightarrow{
+        position: absolute;
+        top: 50%;
+        right: 250px;
+    }
+    .leftarrow{
+        position: absolute;
+        top: 50%;
+        left: 250px;
+    }
 }

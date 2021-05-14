@@ -4,6 +4,7 @@ import ImageSlider from './Components/ImageSlider'
 import { SliderData } from './Components/Sliderdata';
 import HomePage from './Components/HomePage';
 import Nav from './Components/Nav';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" exact component={HomePage}></Route>
         <Route path="/projects" render={routerProps => ( <ImageSlider slides={SliderData}/>)}></Route>
       </Switch>
+      <Footer/>
     </div>
   );
 }

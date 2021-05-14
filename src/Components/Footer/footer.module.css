@@ -1,0 +1,20 @@
+.footerbody{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+    width: 100vw;
+    background-color: rgba(0,0,0,.5);
+}
+
+.defaultlink{
+    color: white;
+    text-decoration: none;
+    font-family: 'Rajdhani';
+    font-weight: 900;
+}
+
+.defaultlink:hover{
+    color: skyblue;
+    text-decoration: underline;
+}

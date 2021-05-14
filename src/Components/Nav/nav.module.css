@@ -1,5 +1,20 @@
 .navbody{
     height:50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    background-color: snow;
+}
+
+.links{
+    text-decoration: none;
+    color: black;
+    font-family: 'Rajdhani';
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+.links:hover{
+    color: rgb(2, 151, 151);
+    text-decoration: underline;
 }
