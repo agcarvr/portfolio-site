@@ -1,22 +1,25 @@
 .homebody{
     font-family: 'Rajdhani';
-    height: calc(100vh - 80px);
+    height: calc(100vh - 85px);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    align-items: space-around;
     color: rgb(224, 241, 247);
 }
 
 
 .textbody{
-    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    align-items: space-around;
 }
 
-.reacticon{
-    position: relative;
+@media screen and (max-width: 700px){
+    .header{
+        text-align: center;
+        position: relative;
+        right: 1vw
+    }
 }

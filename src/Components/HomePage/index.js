@@ -6,7 +6,7 @@ export default function HomePage(){
     return (
         <div className={styles.homebody}>
             <center className={styles.textbody}>
-            <h1>Welcome To My Portfolio</h1>
+            <h1 className={styles.header}>Hello!</h1>
             <h3>I'm Erin Carver,</h3>
             <h3>a full stack engineer</h3>
             <h3 className={styles.reactstring}> specializing in react {<GrReactjs className={styles.reacticon}/>}</h3>

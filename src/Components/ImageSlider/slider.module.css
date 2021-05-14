@@ -1,6 +1,6 @@
 .slider{
     position: relative;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 85px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,6 +57,8 @@
 
 .description{
     background-color: whitesmoke;
+    display: flex;
+    align-items: center;
     color: Black;
     text-align: center;
     padding: 40px;
@@ -67,10 +69,10 @@
 
 @media screen and (min-width: 1000px){
     .description{
-        width: 76vw;
+        width: 70vw;
     }
     .image{
-        width: 80vw;
+        width: 75vw;
     }
     .rightarrow{
         position: absolute;
@@ -81,5 +83,16 @@
         position: absolute;
         top: 50%;
         left: 250px;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .description{
+        height: 15px;
+        width: 62vw;
+    }
+    .image{
+        height: 50vh;
+        width: 70vw;
     }
 }
